@@ -1,0 +1,4 @@
+Sitemap: https://vsekredity-smr.ru/sitemap.xml
+
+User-agent: *
+Disallow:
