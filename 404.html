@@ -1,3 +1,10 @@
+
+	
+	
+	
+	
+	
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -16,19 +23,20 @@
 	<header id="header" class="sticky top-0 z-10 w-full bg-gradient-to-b from-white via-white" x-data="{ openMenu: false }">
 	<div class="container py-5 mx-auto">
 		<div class="relative grid items-center grid-cols-2 lg:grid-cols-3 lg:w-4/5 xl:w-3/5 lg:mx-auto">
-			<ul class="items-center hidden space-x-8 lg:flex">
+			<ul class="items-center hidden space-x-4 lg:flex whitespace-nowrap">
 				
 				<li>
-					<a href="/contacts" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+					<a href="/contacts" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
 						Контакты
 					</a>
 				</li>
 				
 				<li>
-					<a href="/about-us" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
+					<a href="/about-us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-themes-default">
 						О нас
 					</a>
 				</li>
+				
 				
 			</ul>
 			<a href="/" aria-label="Все кредиты" title="Все кредиты" class="inline-flex items-center lg:mx-auto">
@@ -122,6 +130,7 @@
 									<span>WhatsApp</span>
 								</a>
 							</li>
+							
 						</ul>
 						</nav>
 					</div>
@@ -168,11 +177,13 @@
 				<a href="mailto:info@vsekredity-smr.ru" aria-label="info@vsekredity-smr.ru" title="info@vsekredity-smr.ru" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">info@vsekredity-smr.ru</a>
 			</div>
 			<div class="flex">
-				<p class="mr-1 text-gray-800">Адрес:</p>
 				
-				<a href="https://yandex.ru/maps/org/vse_kredity/112316043811/?ll=50.216561%2C53.246289&amp;z=17" target="_blank" rel="nofollow noopener noreferrer" aria-label="г. Самара, ул. Московское Шоссе, д.163 А, оф. 300" title="г. Самара, ул. Московское Шоссе, д.163 А, оф. 300" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
-					г. Самара, ул. Московское Шоссе, д.163 А, оф. 300
-				</a>
+					<p class="mr-1 text-gray-800">Адрес:</p>
+					
+					<a href="https://yandex.ru/maps/org/vse_kredity/112316043811/?ll=50.216561%2C53.246289&amp;z=17" target="_blank" rel="nofollow noopener noreferrer" aria-label="г. Самара, ул. Московское Шоссе, д.163 А, оф. 300" title="г. Самара, ул. Московское Шоссе, д.163 А, оф. 300" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">
+						г. Самара, ул. Московское Шоссе, д.163 А, оф. 300
+					</a>
+					
 				
 			</div>
 		</div>
@@ -204,7 +215,7 @@
 					'utm_source': "Все кредиты Самара"
 				},
 				
-				
+
 				message: '',
 				showMessage: false,
 				loading: false,
@@ -215,7 +226,7 @@
 				this.loading = true;
 				this.message = ''
 
-				fetch('https://dev3.credeo.ru/v1/lead/new-guest', {
+				fetch('https://credeo.ru/v1/lead/new-guest', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
