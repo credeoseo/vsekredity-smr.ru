@@ -1,8 +1,9 @@
 
 	
-	
-	
-	
+		
+		
+		
+		
 	
 
 <!DOCTYPE html>
@@ -147,7 +148,7 @@
 			<h1>О нас</h1>
 <p>Мы сервис по подбору финансовых услуг в Самаре.</p>
 <p>Имеем много положительных <a href="/#reviews">отзывов</a>, и готовы дальше помогать вам в быстром выборе выгодных предложений.</p>
-<p>Работаем по адресу <a href="https://yandex.ru/maps/org/vse_kredity/112316043811/?ll=50.216561%2C53.246289&amp;z=17">г.Самара, ул. Зои Космодемьянской д.21</a></p>
+<p>Работаем по адресу:</p>
 <p>Если у вас есть вопросы к нашей компании вы можете с нами связаться по номеру телефона <a href="tel:88462110436">88462110436</a> или через <a href="79914591121">WhatsApp</a></p>
 <p>Или можете заказать обратный звонок в форме ниже</p>
 
@@ -157,7 +158,7 @@
 
 
 	<section class="relative text-gray-600 body-font">
-	<form x-ref="form" action="https://credeo.ru/v1/lead/new-guest" method="post" class="container py-10 mx-auto" x-data="contactForm()" @submit.prevent="submitData">
+	<form x-ref="form" action="https://partner.credeo.ru/v1/lead/new-guest" method="post" class="container py-10 mx-auto" x-data="contactForm()" @submit.prevent="submitData">
 		<div class="flex flex-col w-full text-center">
 			<h2 class="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font">Обратный <span class="text-themes-default">звонок</span></h2>
 		</div>
@@ -279,7 +280,7 @@
 				this.loading = true;
 				this.message = ''
 
-				fetch('https://credeo.ru/v1/lead/new-guest', {
+				fetch('https://partner.credeo.ru/v1/lead/new-guest', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
@@ -321,3 +322,5 @@
 	<noscript><div><img src="https://mc.yandex.ru/watch/86852439" style="position:absolute; left:-9999px;" alt="YM" /></div></noscript>
 </body>
 </html>
+
+
